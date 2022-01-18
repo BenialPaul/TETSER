@@ -3,5 +3,9 @@
   "dependencies": {
     "@cucumber/cucumber": "*",
     "protractor": "^7.0.0"
+  },
+  "devDependencies": {
+    "protractor-cucumber-framework": "^8.2.11"
+    
   }
 }
