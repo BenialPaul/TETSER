@@ -1,3 +1,7 @@
 {
-  "name": "node-zjshsk"
+  "name": "node-zjshsk",
+  "dependencies": {
+    "@cucumber/cucumber": "*",
+    "protractor": "^7.0.0"
+  }
 }
