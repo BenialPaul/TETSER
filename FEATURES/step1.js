@@ -1,17 +1,18 @@
-let webdriver = require(‘selenium-webdriver’);
+const { promise } = require('protractor');
+
+var webdriver = require('selenium-webdriver');
 
 var browser_name = new webdriver.Builder();
 
 withCapabilities(webdriver.Capabilities.firefox()).build();
 
-browser.get(‘http:/www.google.com’);
-
-let promise = browser_name.getTitle();
-
-promise.then(function(title) 
+browser.get('http:/www.google.com');
+var Promise = browser_name.getTitle();
 
 {
+  console.log(title);
+}
 
-console.log(title);
+browser.quit();
 
-});
+
